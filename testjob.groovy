@@ -6,8 +6,8 @@ node('slave-1')
 	{
 		print("hello world")
 	}	
-        stage('progress')
+        stage('checkout')
 	{
-		common.firstfunction()
+		common.checkoutrepo("git@github.com:codelessthinkmore/teleazure.git")
 	}
 }
