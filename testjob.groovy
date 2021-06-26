@@ -1,4 +1,4 @@
-library common
+library "common"
 
 node('slave-1')
 {
