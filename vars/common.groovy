@@ -1,11 +1,8 @@
-def checkoutrepo(url)
+def checkoutrepo(reponame)
 {
     sh """
-
-    git clone ${url}
-    
+    git clone https://github.com/codelessthinkmore/${reponame}.git -b master
     """
-
 }
 
 def BuildDockerImage(reponame,imagename,regurl)
