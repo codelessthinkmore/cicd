@@ -8,6 +8,7 @@ node('slave-1')
 	}	
         stage('checkout')
 	{
+		sh "whoami"
 		common.checkoutrepo("git@github.com:codelessthinkmore/teleazure.git")
 	}
 }
