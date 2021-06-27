@@ -1,8 +1,8 @@
 def checkoutrepo(reponame)
 {
-    sh """
-    git clone https://github.com/codelessthinkmore/${reponame}.git -b master
-    """
+    git branch: 'master',
+    credentialsId: '06116240-c970-4653-abf1-271ada2586c3',
+	    url: "git@github.com:codelessthinkmore/${reponame}.git"
 }
 
 def BuildDockerImage(reponame,imagename,regurl)
