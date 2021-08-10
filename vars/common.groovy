@@ -1,6 +1,6 @@
-def checkoutrepo(reponame)
+def checkoutrepo(reponame,branchname)
 {
-    git branch: 'master',
+    git branch: ${branchname},
     credentialsId: '06116240-c970-4653-abf1-271ada2586c3',
 	    url: "git@github.com:codelessthinkmore/${reponame}.git"
 }
